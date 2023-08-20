@@ -3,7 +3,7 @@
 version: 2.1
 
 trigger:
-  -trigger
+  -no trigger
 
 # Define a job to be invoked later in a workflow.
 # See: https://circleci.com/docs/configuration-reference/#jobs
@@ -28,7 +28,7 @@ jobs:
 #          command: mvn --batch-mode clean release:prepare release:perform  -s .circleci/settings.xml
       - run:
           name: "Auto Incrementing version"
-          command: mvn --batch-mode clean release:prepare -s .circleci/settings.xml
+          command: mvn --batch-mode clean release:prepare release:perform -s .circleci/settings.xml
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
