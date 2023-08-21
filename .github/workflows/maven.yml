@@ -27,6 +27,10 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+    - name: Github Email
+      run: git config --global user.email "yugeshae@gmail.com"
+    - name: Github User Name
+      run: git config --global user.name "YUGESH-AE"
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: AutoVersion Increment
