@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>Spring-FrameWork-5</artifactId>
-	<version>0.0.77-SNAPSHOT</version>
+	<version>0.0.77</version>
 	<name>Spring-FrameWork-5</name>
 	<description>Spring-FrameWork-5</description>
 	<properties>
@@ -73,7 +73,7 @@
 		<developerConnection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</developerConnection>
 		<connection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</connection>
 		<url>https://github.com/YUGESH-AE/Spring-FrameWork-5</url>
- 		<tag>Spring-FrameWork-5</tag>
+ 		<tag>Spring-FrameWork-5-0.0.77</tag>
  	 </scm>
 
 	<build>
