@@ -69,12 +69,12 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-<!--	<scm>-->
-<!--		<developerConnection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</developerConnection>-->
-<!--		<connection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</connection>-->
-<!--		<url>https://github.com/YUGESH-AE/Spring-FrameWork-5</url>-->
-<!-- 		<tag>Spring-FrameWork-5</tag>-->
-<!--  </scm>-->
+	<scm>
+		<developerConnection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</developerConnection>
+		<connection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</connection>
+		<url>https://github.com/YUGESH-AE/Spring-FrameWork-5</url>
+ 		<tag>Spring-FrameWork-5</tag>
+  </scm>
 
 	<build>
 		<extensions>
@@ -120,9 +120,9 @@
 			</plugin>
 		</plugins>
 	</build>
-	<scm>
-		<developerConnection>scm:git:git@github.com:YUGESH-AE/Spring-FrameWork-5.git</developerConnection>
-	</scm>
+<!--	<scm>-->
+<!--		<developerConnection>scm:git:git@github.com:YUGESH-AE/Spring-FrameWork-5.git</developerConnection>-->
+<!--	</scm>-->
 	<distributionManagement>
 		<repository>
 			<id>packagecloud.releases</id>
