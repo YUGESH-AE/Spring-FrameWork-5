@@ -9,7 +9,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>Spring-FrameWork-5</artifactId>
-	<version>0.0.28-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring-FrameWork-5</name>
 	<description>Spring-FrameWork-5</description>
 	<properties>
