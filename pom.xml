@@ -74,7 +74,7 @@
 		<connection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</connection>
 		<url>https://github.com/YUGESH-AE/Spring-FrameWork-5</url>
  		<tag>Spring-FrameWork-5</tag>
-  </scm>
+ 	 </scm>
 
 	<build>
 		<extensions>
