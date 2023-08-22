@@ -69,13 +69,12 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<scm>
-		<developerConnection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</developerConnection>
-		<connection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</connection>
-		<url>https://github.com/YUGESH-AE/Spring-FrameWork-5</url>
- 		<tag>Spring-FrameWork-5</tag>
-
-  </scm>
+<!--	<scm>-->
+<!--		<developerConnection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</developerConnection>-->
+<!--		<connection>scm:git:https://github.com/YUGESH-AE/Spring-FrameWork-5.git</connection>-->
+<!--		<url>https://github.com/YUGESH-AE/Spring-FrameWork-5</url>-->
+<!-- 		<tag>Spring-FrameWork-5</tag>-->
+<!--  </scm>-->
 
 	<build>
 		<extensions>
@@ -86,11 +85,11 @@
 		</extension>
 	</extensions>
 		<plugins>
-			<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-release-plugin</artifactId>
-			<version>3.0.1</version>
-			</plugin>
+<!--			<plugin>-->
+<!--			<groupId>org.apache.maven.plugins</groupId>-->
+<!--			<artifactId>maven-release-plugin</artifactId>-->
+<!--			<version>3.0.1</version>-->
+<!--			</plugin>-->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -112,8 +111,18 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<configuration>
+					<goals>install</goals>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
+	<scm>
+		<developerConnection>scm:git:git@github.com:YUGESH-AE/Spring-FrameWork-5.git</developerConnection>
+	</scm>
 	<distributionManagement>
 		<repository>
 			<id>packagecloud.releases</id>

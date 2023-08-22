@@ -28,7 +28,7 @@ jobs:
 #          command: mvn --batch-mode clean release:prepare release:perform  -s .circleci/settings.xml
       - run:
           name: "Auto Incrementing version"
-          command: mvn --batch-mode clean release:prepare release:perform -s settings.xml
+          command: mvn --batch-mode mvn release:prepare -DdryRun=true  -s settings.xml
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
