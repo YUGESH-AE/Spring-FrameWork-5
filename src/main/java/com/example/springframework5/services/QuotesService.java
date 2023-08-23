@@ -1,6 +1,6 @@
 package com.example.springframework5.services;
 
-public interface JokesService {
+public interface QuotesService {
 
-    String getJoke();
+    String getQuotes();
 }

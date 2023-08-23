@@ -1,19 +1,20 @@
 package com.example.springframework5.services;
 
-import guru.springframework.norris.chuck.ChuckNorrisQuotes;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class JokesServiceImpl implements JokesService {
+public class QuotesServiceImpl implements QuotesService {
 
-    private final ChuckNorrisQuotes chuckNorrisQuotes;
+    @Autowired
+    private final MotivationalQuotes MotivationalQuotes;
 
-    public JokesServiceImpl() {
-        this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+    public QuotesServiceImpl() {
+        this.MotivationalQuotes = new MotivationalQuotes();
     }
 
     @Override
-    public String getJoke() {
-        return chuckNorrisQuotes.getRandomQuote();
+    public String getQuotes() {
+        return MotivationalQuotes.getRandomQuote();
     }
 }
