@@ -1,6 +1,6 @@
 package com.example.springframework5.controllers;
 
-import com.example.springframework5.services.JokesService;
+import com.example.springframework5.services.QuotesService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,16 +8,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class JokeController {
 
-    private final JokesService jokesService;
+    private final QuotesService quotesService;
 
 
-    public JokeController(JokesService jokesService) {
-        this.jokesService = jokesService;
+    public JokeController(QuotesService quotesService) {
+        this.quotesService = quotesService;
     }
 
     @RequestMapping({"/",""})
     public String showJoke(Model model) {
-        model.addAttribute("jokes", jokesService.getJoke());
+        model.addAttribute("quotes", quotesService.getQuotes());
 
         return "index.html";
     }
