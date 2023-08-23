@@ -3,7 +3,7 @@
 #
 FROM maven:3.8.4-openjdk-17-slim AS Build
 COPY . .
-RUN mvn clean install package
+RUN mvn clean install
 
 #
 # Package stage
