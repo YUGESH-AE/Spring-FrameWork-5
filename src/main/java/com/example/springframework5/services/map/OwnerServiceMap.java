@@ -5,7 +5,7 @@ import com.example.springframework5.services.CrudService;
 
 import java.util.Set;
 
-public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements CrudService<Owner,Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
 
 
     @Override
@@ -15,12 +15,12 @@ public class OwnerServiceMap extends AbstractMapService<Owner,Long> implements C
 
     @Override
     public void deleteById(Long id) {
-            super.deleteById(id);
+        super.deleteById(id);
     }
 
     @Override
     public void delete(Owner object) {
-            super.delete(object);
+        super.delete(object);
     }
 
     @Override
